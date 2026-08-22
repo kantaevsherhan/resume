@@ -4,6 +4,13 @@
       margin-bottom: 20px;
 
       font-size: 14px;
+
+      & > b {
+        color: $gray-text-color;
+
+        font-size: inherit;
+        font-weight: 600;
+      }
     }
   }
 }

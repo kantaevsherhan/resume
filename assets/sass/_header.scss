@@ -1,9 +1,12 @@
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   margin-bottom: 50px;
+
+  &-avatar {
+    width: 40%;
+  }
 
   &-avatar > img {
     width: 225px;
@@ -16,6 +19,10 @@
   }
 
   &-username {
+    width: 60%;
+
+    margin-left: 50px;
+
     & > {
       .name {
         font-size: 56px;
@@ -26,15 +33,24 @@
         font-size: 21px;
       }
     }
-
-    margin-right: 50px;
   }
 
   @media (max-width: 992px) {
     flex-direction: column;
 
+    &-avatar {
+      width: auto;
+    }
+
     &-username {
-      margin-right: 0;
+      width: 100%;
+
+      margin-left: 0;
+      margin-top: 20px;
+
+      & > .name {
+        text-align: center;
+      }
 
       & > .profession {
         text-align: center;
