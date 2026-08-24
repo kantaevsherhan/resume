@@ -5,7 +5,8 @@
   margin-bottom: 50px;
 
   &-avatar {
-    width: 40%;
+    width: 225px;
+    flex: 0 0 225px;
   }
 
   &-avatar > img {
@@ -19,9 +20,8 @@
   }
 
   &-username {
-    width: 60%;
-
-    margin-left: 50px;
+    flex: 1;
+    margin-left: 70px;
 
     & > {
       .name {
@@ -40,6 +40,7 @@
 
     &-avatar {
       width: auto;
+      flex: none;
     }
 
     &-username {
